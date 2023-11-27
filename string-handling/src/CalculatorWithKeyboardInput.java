@@ -50,7 +50,7 @@ public class CalculatorWithKeyboardInput {
             }
 
 
-        } catch (IOException ie) {
+        } catch (IOException | NumberFormatException ie) {
             System.err.println(ie);
         }
     }
@@ -70,7 +70,7 @@ public class CalculatorWithKeyboardInput {
             return number1 * number2;
         }
 
-        public static int div( int number1, int number2) {
+        public static float div( float number1, float number2) {
 
             return number1 / number2;
 
